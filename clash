@@ -27,6 +27,7 @@ proxies:
   - {name: 🇯🇵 日本 tg@freeVPNjd, server: jp10.microsoft-orgwly.vip, port: 10036, client-fingerprint: chrome, type: trojan, password: 4f8cd59a-e5ac-4293-8173-e2b4e3389e3c, tfo: false, skip-cert-verify: false}
   - {name: 🇭🇰 香港02 tg@freeVPNjd, server: hk2.microsoft-orgwly.vip, port: 10066, client-fingerprint: chrome, type: trojan, password: 4f8cd59a-e5ac-4293-8173-e2b4e3389e3c, tfo: false, skip-cert-verify: false}
   - {name: 🇭🇰 香港 tg@freeVPNjd, server: hk1.microsoft-orgwly.vip, port: 10021, client-fingerprint: chrome, type: trojan, password: 4f8cd59a-e5ac-4293-8173-e2b4e3389e3c, tfo: false, skip-cert-verify: false}
+  - {name: 🇺🇸 中转美国 tg@freeVPNjd, server: 120.233.43.29, port: 53173, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -54,6 +55,7 @@ proxy-groups:
       - 🇯🇵 日本 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
       - 🇭🇰 香港 tg@freeVPNjd
+      - 🇺🇸 中转美国 tg@freeVPNjd
   - name: 📲 电报消息
     type: select
     proxies:
@@ -246,7 +248,7 @@ proxy-groups:
   - name: 🇺🇲 美国节点
     type: select
     proxies:
-      - DIRECT
+      - 🇺🇸 中转美国 tg@freeVPNjd
   - name: 🇸🇬 狮城节点
     type: select
     proxies:
