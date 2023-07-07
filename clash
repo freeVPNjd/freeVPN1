@@ -15,12 +15,11 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇹🇼 台湾01 tg@freeVPNjd, server: dx2.nfsq.me, port: 54368, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: b9684bbc-bbd5-4d37-9620-ed69c938b5ca, tfo: false}
-  - {name: 🇭🇰 香港04 tg@freeVPNjd, server: dx2.nfsq.me, port: 54332, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: b9684bbc-bbd5-4d37-9620-ed69c938b5ca, tfo: false}
-  - {name: 🇭🇰 香港03 tg@freeVPNjd, server: gzyd.nfsq.me, port: 11122, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: b9684bbc-bbd5-4d37-9620-ed69c938b5ca, tfo: false}
-  - {name: 🇭🇰 香港02 tg@freeVPNjd, server: dx2.nfsq.me, port: 43670, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: b9684bbc-bbd5-4d37-9620-ed69c938b5ca, tfo: false}
-  - {name: 🇭🇰 香港 tg@freeVPNjd, server: dx2.nfsq.me, port: 47768, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: b9684bbc-bbd5-4d37-9620-ed69c938b5ca, tfo: false}
-  - {name: 🇭🇰 香港05 tg@freeVPNjd, server: hk.untilmu.com, port: 29996, client-fingerprint: chrome, type: vmess, uuid: c354a3e2-7a94-4a35-b5db-80b7d6e97000, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本03 tg@freeVPNjd, server: dir01.netorigins2u.site, port: 30501, client-fingerprint: chrome, type: vmess, uuid: 129e3daf-414d-374c-a8ec-d90e13c9595f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: us01.tomoony.xyz}
+  - {name: 🇯🇵 日本02 tg@freeVPNjd, server: 45.88.43.163, port: 51801, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡 tg@freeVPNjd, server: dir01.netorigins2u.site, port: 30201, client-fingerprint: chrome, type: vmess, uuid: 129e3daf-414d-374c-a8ec-d90e13c9595f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: sg01.tomoony.xyz}
+  - {name: 🇯🇵 日本 tg@freeVPNjd, server: dir01.netorigins2u.site, port: 30101, client-fingerprint: chrome, type: vmess, uuid: 129e3daf-414d-374c-a8ec-d90e13c9595f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: jp01.tomoony.xyz}
+  - {name: 🇭🇰 香港 tg@freeVPNjd, server: hk.untilmu.com, port: 29996, client-fingerprint: chrome, type: vmess, uuid: c354a3e2-7a94-4a35-b5db-80b7d6e97000, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -36,12 +35,11 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇹🇼 台湾01 tg@freeVPNjd
-      - 🇭🇰 香港04 tg@freeVPNjd
-      - 🇭🇰 香港03 tg@freeVPNjd
-      - 🇭🇰 香港02 tg@freeVPNjd
+      - 🇯🇵 日本03 tg@freeVPNjd
+      - 🇯🇵 日本02 tg@freeVPNjd
+      - 🇸🇬 新加坡 tg@freeVPNjd
+      - 🇯🇵 日本 tg@freeVPNjd
       - 🇭🇰 香港 tg@freeVPNjd
-      - 🇭🇰 香港05 tg@freeVPNjd
   - name: 📲 电报消息
     type: select
     proxies:
@@ -220,15 +218,13 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: select
     proxies:
-      - 🇭🇰 香港04 tg@freeVPNjd
-      - 🇭🇰 香港03 tg@freeVPNjd
-      - 🇭🇰 香港02 tg@freeVPNjd
       - 🇭🇰 香港 tg@freeVPNjd
-      - 🇭🇰 香港05 tg@freeVPNjd
   - name: 🇯🇵 日本节点
     type: select
     proxies:
-      - DIRECT
+      - 🇯🇵 日本03 tg@freeVPNjd
+      - 🇯🇵 日本02 tg@freeVPNjd
+      - 🇯🇵 日本 tg@freeVPNjd
   - name: 🇺🇲 美国节点
     type: select
     proxies:
@@ -236,11 +232,11 @@ proxy-groups:
   - name: 🇸🇬 狮城节点
     type: select
     proxies:
-      - DIRECT
+      - 🇸🇬 新加坡 tg@freeVPNjd
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
-      - 🇹🇼 台湾01 tg@freeVPNjd
+      - DIRECT
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
