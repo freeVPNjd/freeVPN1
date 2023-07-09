@@ -15,14 +15,16 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇭🇰 香港06 tg@freeVPNjd, server: hk2.microsoft-orgwly.vip, port: 10066, client-fingerprint: chrome, type: trojan, password: 6732c4b4-2e00-428d-afcf-c34a8394e116, tfo: false, sni: tls.microsoft-orgwly.vip, skip-cert-verify: false}
-  - {name: 🇭🇰 香港05 tg@freeVPNjd, server: hk1.yihaobao.xyz, port: 10022, client-fingerprint: chrome, type: trojan, password: dbd6f8e0-bb71-4a88-b31d-90711609c3de, tfo: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡01 tg@freeVPNjd, server: kbawssg2.aiopen.cfd, port: 443, client-fingerprint: chrome, type: trojan, password: d51f8335-4f7d-4d3a-acae-d65467b46502, tfo: false, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港04 tg@freeVPNjd, server: 18.166.212.188, port: 10022, client-fingerprint: chrome, type: trojan, password: dbd6f8e0-bb71-4a88-b31d-90711609c3de, tfo: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本01 tg@freeVPNjd, server: kbawsjp1.aiopen.cfd, port: 443, client-fingerprint: chrome, type: trojan, password: d51f8335-4f7d-4d3a-acae-d65467b46502, tfo: false, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港04 tg@freeVPNjd, server: gzv6.batiex.xyz, port: 10002, client-fingerprint: chrome, type: trojan, password: 23ab9dc1-3e77-484c-bb43-3b7152092fc5, tfo: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡04 tg@freeVPNjd, server: a14.2e5bf271.win, port: 80, client-fingerprint: chrome, type: vmess, uuid: 25fdc5c3-df37-498f-9846-755e22164d2f, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: a14.2e5bf271.win}}}
+  - {name: 🇭🇰 香港02 tg@freeVPNjd, server: 220.246.51.36, port: 443, client-fingerprint: chrome, type: trojan, password: 492c73ea-7080-4554-bc41-f027d825ae15, tfo: false, sni: telewebion.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港05 tg@freeVPNjd, server: gzv6.batiex.xyz, port: 10002, client-fingerprint: chrome, type: trojan, password: 23ab9dc1-3e77-484c-bb43-3b7152092fc5, tfo: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡03 tg@freeVPNjd, server: a13.2e5bf271.win, port: 80, client-fingerprint: chrome, type: vmess, uuid: 25fdc5c3-df37-498f-9846-755e22164d2f, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: a13.2e5bf271.win}}}
+  - {name: 🇭🇰 香港 tg@freeVPNjd, server: hk7.yihaobao.xyz, port: 443, client-fingerprint: chrome, type: trojan, password: 492c73ea-7080-4554-bc41-f027d825ae15, tfo: false, skip-cert-verify: false}
+  - {name: 🇹🇼 台湾 tg@freeVPNjd, server: 23.248.176.96, port: 44444, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: !<str> 123456, tfo: false}
+  - {name: 🇸🇬 新加坡02 tg@freeVPNjd, server: 183.240.37.215, port: 2001, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 79ac3281-7c7f-4e74-bde4-d5fae6a93ca8, tfo: false}
+  - {name: 🇸🇬 新加坡 tg@freeVPNjd, server: 223.113.136.103, port: 2001, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 79ac3281-7c7f-4e74-bde4-d5fae6a93ca8, tfo: false}
   - {name: 🇭🇰 香港03 tg@freeVPNjd, server: hk7.yihaobao.xyz, port: 443, client-fingerprint: chrome, type: trojan, password: 492c73ea-7080-4554-bc41-f027d825ae15, tfo: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港02 tg@freeVPNjd, server: hk1.microsoft-orgwly.vip, port: 10021, client-fingerprint: chrome, type: trojan, password: 6732c4b4-2e00-428d-afcf-c34a8394e116, tfo: false, sni: tls.microsoft-orgwly.vip, skip-cert-verify: false}
-  - {name: 🇭🇰 香港01 tg@freeVPNjd, server: hk2.yihaobao.xyz, port: 10022, client-fingerprint: chrome, type: trojan, password: dbd6f8e0-bb71-4a88-b31d-90711609c3de, tfo: false, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -38,14 +40,16 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇭🇰 香港06 tg@freeVPNjd
-      - 🇭🇰 香港05 tg@freeVPNjd
-      - 🇸🇬 新加坡01 tg@freeVPNjd
       - 🇭🇰 香港04 tg@freeVPNjd
-      - 🇯🇵 日本01 tg@freeVPNjd
-      - 🇭🇰 香港03 tg@freeVPNjd
+      - 🇸🇬 新加坡04 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
-      - 🇭🇰 香港01 tg@freeVPNjd
+      - 🇭🇰 香港05 tg@freeVPNjd
+      - 🇸🇬 新加坡03 tg@freeVPNjd
+      - 🇭🇰 香港 tg@freeVPNjd
+      - 🇹🇼 台湾 tg@freeVPNjd
+      - 🇸🇬 新加坡02 tg@freeVPNjd
+      - 🇸🇬 新加坡 tg@freeVPNjd
+      - 🇭🇰 香港03 tg@freeVPNjd
   - name: 📲 电报消息
     type: select
     proxies:
@@ -224,16 +228,15 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: select
     proxies:
-      - 🇭🇰 香港06 tg@freeVPNjd
-      - 🇭🇰 香港05 tg@freeVPNjd
       - 🇭🇰 香港04 tg@freeVPNjd
-      - 🇭🇰 香港03 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
-      - 🇭🇰 香港01 tg@freeVPNjd
+      - 🇭🇰 香港05 tg@freeVPNjd
+      - 🇭🇰 香港 tg@freeVPNjd
+      - 🇭🇰 香港03 tg@freeVPNjd
   - name: 🇯🇵 日本节点
     type: select
     proxies:
-      - 🇯🇵 日本01 tg@freeVPNjd
+      - DIRECT
   - name: 🇺🇲 美国节点
     type: select
     proxies:
@@ -241,11 +244,14 @@ proxy-groups:
   - name: 🇸🇬 狮城节点
     type: select
     proxies:
-      - 🇸🇬 新加坡01 tg@freeVPNjd
+      - 🇸🇬 新加坡04 tg@freeVPNjd
+      - 🇸🇬 新加坡03 tg@freeVPNjd
+      - 🇸🇬 新加坡02 tg@freeVPNjd
+      - 🇸🇬 新加坡 tg@freeVPNjd
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
-      - DIRECT
+      - 🇹🇼 台湾 tg@freeVPNjd
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
