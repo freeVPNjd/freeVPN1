@@ -5,17 +5,18 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇸🇬 新加坡 tg@freeVPNjd, server: 52.77.227.59, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇸🇬 新加坡02 tg@freeVPNjd, server: 18.136.196.12, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇸🇬 新加坡03 tg@freeVPNjd, server: kbawssg2.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡04 tg@freeVPNjd, server: kbawssg1.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 tg@freeVPNjd, server: linshi-a1.starlinks.vip, port: 35487, type: trojan, password: f25b1a86-af94-4c95-9ce4-9760859130a4, sni: linshi-a1.starlinks.vip, skip-cert-verify: false}
-  - {name: 🇭🇰 香港02 tg@freeVPNjd, server: hk2.yihaobao.xyz, port: 10022, type: trojan, password: aa42d8be-477a-40ae-be3c-649fb0e0cdd1, skip-cert-verify: false}
-  - {name: 🇭🇰 香港03 tg@freeVPNjd, server: hk1.594888.xyz, port: 2443, type: vmess, uuid: d2d1e43b-c5ab-3aa1-a648-126bfc794f42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /maohk3, headers: {Host: hk1.594888.xyz}}}
-  - {name: 🇯🇵 日本 tg@freeVPNjd, server: weo-jp-2.laowufly.cf, port: 23333, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/FUCK!!!}
-  - {name: 🇯🇵 日本02 tg@freeVPNjd, server: weo-jp-1.laowufly.cf, port: 2333, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/FUCK!!!}
+  - {name: 🇨🇳 台湾02 tg@freeVPNjd, server: ovotw.ovogreat.com, port: 443, type: trojan, password: 4e4cd2e5-8844-4685-9c1e-6f88e0bb131b, sni: ovotw.ovogreat.com, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾01 tg@freeVPNjd, server: 60.249.3.228, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: f1f3227.f3.glados-config.net, network: ws, ws-opts: {path: /s/f1f3227.fm.apple.com:111548, headers: {Host: f1f3227.f3.glados-config.net}}}
   - {name: 🇯🇵 日本03 tg@freeVPNjd, server: kbawsjp1.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾 tg@freeVPNjd, server: tw.nfsq.me, port: 22251, type: vmess, uuid: d5c395be-b387-412d-a51b-7780a0bfa575, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /nfsq, headers: {Host: tw.nfsq.me}}}
+  - {name: 🇯🇵 日本02 tg@freeVPNjd, server: kbawsjp2.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, skip-cert-verify: false}
+  - {name: 🇯🇵 日本01 tg@freeVPNjd, server: kbawsjp1.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港03 tg@freeVPNjd, server: hk1.594888.xyz, port: 2443, type: vmess, uuid: d2d1e43b-c5ab-3aa1-a648-126bfc794f42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /maohk3, headers: {Host: hk1.594888.xyz}}}
+  - {name: 🇭🇰 香港02 tg@freeVPNjd, server: hk2.yihaobao.xyz, port: 10022, type: trojan, password: aa42d8be-477a-40ae-be3c-649fb0e0cdd1, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 tg@freeVPNjd, server: linshi-a1.starlinks.vip, port: 35487, type: trojan, password: f25b1a86-af94-4c95-9ce4-9760859130a4, sni: linshi-a1.starlinks.vip, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡04 tg@freeVPNjd, server: kbawssg1.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡03 tg@freeVPNjd, server: kbawssg2.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡02 tg@freeVPNjd, server: kbawssg1.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡01 tg@freeVPNjd, server: kbawssg2.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -31,17 +32,18 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇸🇬 新加坡 tg@freeVPNjd
-      - 🇸🇬 新加坡02 tg@freeVPNjd
-      - 🇸🇬 新加坡03 tg@freeVPNjd
-      - 🇸🇬 新加坡04 tg@freeVPNjd
-      - 🇭🇰 香港 tg@freeVPNjd
-      - 🇭🇰 香港02 tg@freeVPNjd
-      - 🇭🇰 香港03 tg@freeVPNjd
-      - 🇯🇵 日本 tg@freeVPNjd
-      - 🇯🇵 日本02 tg@freeVPNjd
+      - 🇨🇳 台湾02 tg@freeVPNjd
+      - 🇨🇳 台湾01 tg@freeVPNjd
       - 🇯🇵 日本03 tg@freeVPNjd
-      - 🇨🇳 台湾 tg@freeVPNjd
+      - 🇯🇵 日本02 tg@freeVPNjd
+      - 🇯🇵 日本01 tg@freeVPNjd
+      - 🇭🇰 香港03 tg@freeVPNjd
+      - 🇭🇰 香港02 tg@freeVPNjd
+      - 🇭🇰 香港 tg@freeVPNjd
+      - 🇸🇬 新加坡04 tg@freeVPNjd
+      - 🇸🇬 新加坡03 tg@freeVPNjd
+      - 🇸🇬 新加坡02 tg@freeVPNjd
+      - 🇸🇬 新加坡01 tg@freeVPNjd
   - name: 📲 电报消息
     type: select
     proxies:
@@ -220,15 +222,15 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: select
     proxies:
-      - 🇭🇰 香港 tg@freeVPNjd
-      - 🇭🇰 香港02 tg@freeVPNjd
       - 🇭🇰 香港03 tg@freeVPNjd
+      - 🇭🇰 香港02 tg@freeVPNjd
+      - 🇭🇰 香港 tg@freeVPNjd
   - name: 🇯🇵 日本节点
     type: select
     proxies:
-      - 🇯🇵 日本 tg@freeVPNjd
-      - 🇯🇵 日本02 tg@freeVPNjd
       - 🇯🇵 日本03 tg@freeVPNjd
+      - 🇯🇵 日本02 tg@freeVPNjd
+      - 🇯🇵 日本01 tg@freeVPNjd
   - name: 🇺🇲 美国节点
     type: select
     proxies:
@@ -236,14 +238,15 @@ proxy-groups:
   - name: 🇸🇬 狮城节点
     type: select
     proxies:
-      - 🇸🇬 新加坡 tg@freeVPNjd
-      - 🇸🇬 新加坡02 tg@freeVPNjd
-      - 🇸🇬 新加坡03 tg@freeVPNjd
       - 🇸🇬 新加坡04 tg@freeVPNjd
+      - 🇸🇬 新加坡03 tg@freeVPNjd
+      - 🇸🇬 新加坡02 tg@freeVPNjd
+      - 🇸🇬 新加坡01 tg@freeVPNjd
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
-      - 🇨🇳 台湾 tg@freeVPNjd
+      - 🇨🇳 台湾02 tg@freeVPNjd
+      - 🇨🇳 台湾01 tg@freeVPNjd
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
