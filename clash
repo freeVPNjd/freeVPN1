@@ -5,18 +5,13 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 🇭🇰 hk tg@freeVPNjd, server: 223.111.157.50, port: 30019, type: vmess, uuid: 02ef1bc7-f4af-46b4-aef1-7c9e0ad9810d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 香港01 tg@freeVPNjd, server: hk2.yihaobao.xyz, port: 10023, type: trojan, password: eeeebdd2-5aa5-4325-b69f-5b8b2c16d9a0, sni: tls.yihaobao.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 香港02 tg@freeVPNjd, server: 223.111.157.50, port: 30030, type: vmess, uuid: 08a76854-6f8b-4763-b159-31a0daffc764, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港02 tg@freeVPNjd, server: 223.111.157.50, port: 30019, type: vmess, uuid: 02ef1bc7-f4af-46b4-aef1-7c9e0ad9810d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 香港03 tg@freeVPNjd, server: runfast01.jiting.space, port: 44384, type: vmess, uuid: af93b7e1-3d2c-41da-8a50-55b6723c6c24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: androidads.ir}
-  - {name: 🇭🇰 香港04 tg@freeVPNjd, server: 223.111.157.50, port: 30030, type: vmess, uuid: 08a76854-6f8b-4763-b159-31a0daffc764, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港05 tg@freeVPNjd, server: 223.111.157.50, port: 30019, type: vmess, uuid: 08a76854-6f8b-4763-b159-31a0daffc764, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾01 tg@freeVPNjd, server: hinet111.gfwisbest.xyz, port: 21234, type: vmess, uuid: eb885fb1-1dbf-3447-81d8-f9992cd58817, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾02 tg@freeVPNjd, server: twpaopao.gfwisbest.xyz, port: 62359, type: vmess, uuid: eb885fb1-1dbf-3447-81d8-f9992cd58817, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾03 tg@freeVPNjd, server: hinet111.gfwisbest.xyz, port: 224, type: vmess, uuid: eb885fb1-1dbf-3447-81d8-f9992cd58817, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾04 tg@freeVPNjd, server: twpaopao.gfwisbest.xyz, port: 60982, type: vmess, uuid: eb885fb1-1dbf-3447-81d8-f9992cd58817, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾05 tg@freeVPNjd, server: sneed-a.v2ok.cc, port: 23000, type: vmess, uuid: eb885fb1-1dbf-3447-81d8-f9992cd58817, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾06 tg@freeVPNjd, server: ddns3.airtcp.vip, port: 10001, type: vmess, uuid: 737dcd75-021f-3e1e-a2f6-6dadd91f86c3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾07 tg@freeVPNjd, server: hinet1276.bieqiangwo.xyz, port: 1259, type: vmess, uuid: eb885fb1-1dbf-3447-81d8-f9992cd58817, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾01 tg@freeVPNjd, server: sneed-a.v2ok.cc, port: 23000, type: vmess, uuid: eb885fb1-1dbf-3447-81d8-f9992cd58817, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾02 tg@freeVPNjd, server: ddns3.airtcp.vip, port: 10001, type: vmess, uuid: 737dcd75-021f-3e1e-a2f6-6dadd91f86c3, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾03 tg@freeVPNjd, server: hinet1276.bieqiangwo.xyz, port: 1259, type: vmess, uuid: eb885fb1-1dbf-3447-81d8-f9992cd58817, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -32,18 +27,13 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
+      - 🇭🇰 hk tg@freeVPNjd
       - 🇭🇰 香港01 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
       - 🇭🇰 香港03 tg@freeVPNjd
-      - 🇭🇰 香港04 tg@freeVPNjd
-      - 🇭🇰 香港05 tg@freeVPNjd
       - 🇨🇳 台湾01 tg@freeVPNjd
       - 🇨🇳 台湾02 tg@freeVPNjd
       - 🇨🇳 台湾03 tg@freeVPNjd
-      - 🇨🇳 台湾04 tg@freeVPNjd
-      - 🇨🇳 台湾05 tg@freeVPNjd
-      - 🇨🇳 台湾06 tg@freeVPNjd
-      - 🇨🇳 台湾07 tg@freeVPNjd
   - name: 📲 电报消息
     type: select
     proxies:
@@ -225,8 +215,6 @@ proxy-groups:
       - 🇭🇰 香港01 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
       - 🇭🇰 香港03 tg@freeVPNjd
-      - 🇭🇰 香港04 tg@freeVPNjd
-      - 🇭🇰 香港05 tg@freeVPNjd
   - name: 🇯🇵 日本节点
     type: select
     proxies:
@@ -245,10 +233,6 @@ proxy-groups:
       - 🇨🇳 台湾01 tg@freeVPNjd
       - 🇨🇳 台湾02 tg@freeVPNjd
       - 🇨🇳 台湾03 tg@freeVPNjd
-      - 🇨🇳 台湾04 tg@freeVPNjd
-      - 🇨🇳 台湾05 tg@freeVPNjd
-      - 🇨🇳 台湾06 tg@freeVPNjd
-      - 🇨🇳 台湾07 tg@freeVPNjd
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
