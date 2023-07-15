@@ -7,9 +7,8 @@ external-controller: :9090
 proxies:
   - {name: 🇯🇵 日本02 tg@freeVPNjd, server: runfast01.jiting.space, port: 44384, type: vmess, uuid: af93b7e1-3d2c-41da-8a50-55b6723c6c24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: androidads.ir}
   - {name: 🇨🇳 台湾01 tg@freeVPNjd, server: f1f3227.f3.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: f1f3227.f3.glados-config.net, network: ws, ws-opts: {path: /s/f1f3227.fm.apple.com:111548, headers: {Host: f1f3227.f3.glados-config.net}}}
+  - {name: 🇸🇬 新加坡 tg@freeVPNjd, server: f1f3227.f3.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: f1f3227.f3.glados-config.net, network: ws, ws-opts: {path: /s/f1f3227.fm.apple.com:111548, headers: {Host: f1f3227.f3.glados-config.net}}}
   - {name: 🇸🇬 新加坡b tg@freeVPNjd, server: f1f3227.f3.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: f1f3227.f3.glados-config.net, network: ws, ws-opts: {path: /s/f1f3227.fm.apple.com:111548, headers: {Host: f1f3227.f3.glados-config.net}}}
-  - {name: 🇸🇬 新加坡 tg@freeVPNjd, server: 6f1sgtr1.106ctc.buzz, port: 50143, type: trojan, password: a4ffbb00-0be3-39a8-9040-4ffef7694363, sni: 6f1sgtr1.106ctc.buzz, skip-cert-verify: false}
-  - {name: 🇯🇵 日本 tg@freeVPNjd, server: 6hkf1.102ctc.xyz, port: 32558, type: trojan, password: a4ffbb00-0be3-39a8-9040-4ffef7694363, sni: 6hkf1.102ctc.xyz, skip-cert-verify: false}
   - {name: 🇳🇱 荷兰 tg@freeVPNjd, server: 156.249.18.61, port: 48123, type: vmess, uuid: 93503dd5-245a-4eb1-ae2a-57ab9f2b3c29, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇬🇧 英国 tg@freeVPNjd, server: 40.120.63.151, port: 18295, type: ss, cipher: chacha20-ietf-poly1305, password: 9FojhKHRjBbQVBr0Q35Zr5}
   - {name: 🇬🇧 英国b tg@freeVPNjd, server: 51.105.39.37, port: 39630, type: ss, cipher: chacha20-ietf-poly1305, password: Qiz9xWRGKG1Lz11yu6D3nm}
@@ -31,9 +30,8 @@ proxy-groups:
     proxies:
       - 🇯🇵 日本02 tg@freeVPNjd
       - 🇨🇳 台湾01 tg@freeVPNjd
-      - 🇸🇬 新加坡b tg@freeVPNjd
       - 🇸🇬 新加坡 tg@freeVPNjd
-      - 🇯🇵 日本 tg@freeVPNjd
+      - 🇸🇬 新加坡b tg@freeVPNjd
       - 🇳🇱 荷兰 tg@freeVPNjd
       - 🇬🇧 英国 tg@freeVPNjd
       - 🇬🇧 英国b tg@freeVPNjd
@@ -221,7 +219,6 @@ proxy-groups:
     type: select
     proxies:
       - 🇯🇵 日本02 tg@freeVPNjd
-      - 🇯🇵 日本 tg@freeVPNjd
   - name: 🇺🇲 美国节点
     type: select
     proxies:
@@ -229,8 +226,8 @@ proxy-groups:
   - name: 🇸🇬 狮城节点
     type: select
     proxies:
-      - 🇸🇬 新加坡b tg@freeVPNjd
       - 🇸🇬 新加坡 tg@freeVPNjd
+      - 🇸🇬 新加坡b tg@freeVPNjd
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
