@@ -5,12 +5,11 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 香港 tg@freeVPNjd, server: gzbgp01.33226163.xyz, port: 14408, type: trojan, password: DD882E65-542E-A63B-47D9-61EA6B31AA96, sni: mpvideo.qpic.cn, skip-cert-verify: false}
-  - {name: 🇭🇰 香港b tg@freeVPNjd, server: gzbgp01.33226163.xyz, port: 14407, type: trojan, password: DD882E65-542E-A63B-47D9-61EA6B31AA96, sni: mpvideo.qpic.cn, skip-cert-verify: false}
-  - {name: 🇭🇰 香港c tg@freeVPNjd, server: gzbgp01.33226163.xyz, port: 14404, type: trojan, password: DD882E65-542E-A63B-47D9-61EA6B31AA96, sni: mpvideo.qpic.cn, skip-cert-verify: false}
-  - {name: 🇭🇰 香港d tg@freeVPNjd, server: gzbgp01.33226163.xyz, port: 14405, type: trojan, password: DD882E65-542E-A63B-47D9-61EA6B31AA96, sni: mpvideo.qpic.cn, skip-cert-verify: false}
-  - {name: 🇯🇵 日本 tg@freeVPNjd, server: shbgp01.33226163.xyz, port: 14393, type: trojan, password: DD882E65-542E-A63B-47D9-61EA6B31AA96, sni: mpvideo.qpic.cn, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡 tg@freeVPNjd, server: f1f3227.f3.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: f1f3227.f3.glados-config.net, network: ws, ws-opts: {path: /s/f1f3227.fm.apple.com:111548, headers: {Host: f1f3227.f3.glados-config.net}}}
+  - {name: 🇸🇬 新加坡 tg@freeVPNjd, server: weo-sg-2.laowufly.cf, port: 1234, type: vmess, uuid: 2a65adbd-112c-4a16-8988-4a2b9e02d4f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾 tg@freeVPNjd, server: 221.131.165.186, port: 18075, type: vmess, uuid: 1b35440a-1309-339b-9dd3-ff90ff887d76, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /soda}}
+  - {name: 🇰🇷 韩国 tg@freeVPNjd, server: kr3.yihaobao.xyz, port: 10051, type: trojan, password: 6ba99583-9730-48f9-aadf-7293c69e60a1, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾b tg@freeVPNjd, server: tw.nfsq.me, port: 22260, type: trojan, password: 42db056a-b919-43fe-b9ea-a10fbfdf2904, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 tg@freeVPNjd, server: adobe4.fmmmz1.com, port: 80, type: vmess, uuid: 6cc1136b-1cfb-34b0-90d6-726bac4d0f34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /adobe, headers: {Host: adobe4.fmmmz1.com}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -26,12 +25,11 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇭🇰 香港 tg@freeVPNjd
-      - 🇭🇰 香港b tg@freeVPNjd
-      - 🇭🇰 香港c tg@freeVPNjd
-      - 🇭🇰 香港d tg@freeVPNjd
-      - 🇯🇵 日本 tg@freeVPNjd
       - 🇸🇬 新加坡 tg@freeVPNjd
+      - 🇨🇳 台湾 tg@freeVPNjd
+      - 🇰🇷 韩国 tg@freeVPNjd
+      - 🇨🇳 台湾b tg@freeVPNjd
+      - 🇭🇰 香港 tg@freeVPNjd
   - name: 📲 电报消息
     type: select
     proxies:
@@ -211,13 +209,10 @@ proxy-groups:
     type: select
     proxies:
       - 🇭🇰 香港 tg@freeVPNjd
-      - 🇭🇰 香港b tg@freeVPNjd
-      - 🇭🇰 香港c tg@freeVPNjd
-      - 🇭🇰 香港d tg@freeVPNjd
   - name: 🇯🇵 日本节点
     type: select
     proxies:
-      - 🇯🇵 日本 tg@freeVPNjd
+      - DIRECT
   - name: 🇺🇲 美国节点
     type: select
     proxies:
@@ -229,11 +224,12 @@ proxy-groups:
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
-      - DIRECT
+      - 🇨🇳 台湾 tg@freeVPNjd
+      - 🇨🇳 台湾b tg@freeVPNjd
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
-      - DIRECT
+      - 🇰🇷 韩国 tg@freeVPNjd
   - name: 🎥 奈飞节点
     type: select
     proxies:
