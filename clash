@@ -5,36 +5,36 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 🇸🇬 狮城 tg@freeVPNjd, server: weo-sg-1.laowufly.cf, port: 23333, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GFW绕过我吧...}
   - {name: 🇨🇳 台湾c tg@freeVPNjd, server: tw1.yihaobao.xyz, port: 10021, type: trojan, password: ddc6a74a-c983-4211-a58a-d5145a83e692, sni: tls.yihaobao.xyz, skip-cert-verify: false}
-  - {name: 🇺🇸 中转美国 tg@freeVPNjd, server: 736b181e-70dc-461c-b5ab-ae5103264116.qawer.cloud, port: 37541, type: ss, cipher: chacha20-ietf-poly1305, password: 61766-BOgv7KC2-XFmHXfNzGhdAB5XtgxBmtycC945xasht}
   - {name: 🇭🇰 香港 tg@freeVPNjd, server: kbawssg1.aiopen.cfd, port: 443, type: trojan, password: c68e3c20-da73-4791-b4d8-7011a98ba06b, skip-cert-verify: false}
-  - {name: 🇭🇰 香港01 tg@freeVPNjd, server: fscsg.fscloud123456789.com, port: 443, type: trojan, password: 53c8e539-30ff-4322-b26f-5e1cdf64b469, skip-cert-verify: false}
   - {name: 🇭🇰 香港02 tg@freeVPNjd, server: kbawssg2.aiopen.cfd, port: 443, type: trojan, password: c68e3c20-da73-4791-b4d8-7011a98ba06b, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾 tg@freeVPNjd, server: spjp.1234567890spcloud.com, port: 443, type: trojan, password: 895c6fa6-d3ec-45f9-a2b1-7424d8f0d93a, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡 tg@freeVPNjd, server: sg.669990.xyz, port: 44045, type: vmess, uuid: 8904e378-f667-41ed-9087-0081e9ac446e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡02 tg@freeVPNjd, server: weo-sg-1.laowufly.cf, port: 2333, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GFW绕过我吧...}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇸🇬 狮城 tg@freeVPNjd
       - 🇨🇳 台湾c tg@freeVPNjd
-      - 🇺🇸 中转美国 tg@freeVPNjd
       - 🇭🇰 香港 tg@freeVPNjd
-      - 🇭🇰 香港01 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
-      - 🇨🇳 台湾 tg@freeVPNjd
+      - 🇸🇬 新加坡 tg@freeVPNjd
+      - 🇸🇬 新加坡02 tg@freeVPNjd
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇸🇬 狮城 tg@freeVPNjd
       - 🇨🇳 台湾c tg@freeVPNjd
-      - 🇺🇸 中转美国 tg@freeVPNjd
       - 🇭🇰 香港 tg@freeVPNjd
-      - 🇭🇰 香港01 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
-      - 🇨🇳 台湾 tg@freeVPNjd
+      - 🇸🇬 新加坡 tg@freeVPNjd
+      - 🇸🇬 新加坡02 tg@freeVPNjd
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -52,12 +52,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇸🇬 狮城 tg@freeVPNjd
       - 🇨🇳 台湾c tg@freeVPNjd
-      - 🇺🇸 中转美国 tg@freeVPNjd
       - 🇭🇰 香港 tg@freeVPNjd
-      - 🇭🇰 香港01 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
-      - 🇨🇳 台湾 tg@freeVPNjd
+      - 🇸🇬 新加坡 tg@freeVPNjd
+      - 🇸🇬 新加坡02 tg@freeVPNjd
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
