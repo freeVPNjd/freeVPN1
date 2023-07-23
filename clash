@@ -5,15 +5,15 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇰🇷 韩国测试 tg@freeVPNjd, server: 142.4.109.68, port: 46672, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡01 tg@freeVPNjd, server: 23.224.202.86, port: 57702, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇹🇷 土耳其临时 tg@freeVPNjd, server: 45.89.52.66, port: 9065, type: ss, cipher: aes-256-cfb, password: PeHSHm5SqEjBuEXE}
-  - {name: 🇸🇬 新加坡02 tg@freeVPNjd, server: 137.175.63.135, port: 59009, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾 tg@freeVPNjd, server: sg2.downloadvip.cfd, port: 443, type: trojan, password: 718c4ef4-9f65-496c-9547-f27e4226c4f5, sni: jssg1.xn--mes358acgm99l.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 tg@freeVPNjd, server: 107.167.7.22, port: 41654, type: vmess, uuid: bdee202c-8fae-441f-a588-7bc4d3887019, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港03 tg@freeVPNjd, server: 45.58.186.83, port: 51140, type: vmess, uuid: 4a138e19-0595-4d51-83c6-fd276cf7d307, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港02 tg@freeVPNjd, server: 192.74.232.228, port: 52312, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 狮城 tg@freeVPNjd, server: weo-sg-1.laowufly.cf, port: 23333, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GFW绕过我吧...}
+  - {name: 🇰🇷 韩国测试 tg@freeVPNjd, server: 43.202.58.144, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇨🇳 台湾 tg@freeVPNjd, server: 103.177.33.180, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9e44e9ffe5c2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: wtw1000mline004.chilines.club, path: /isaifqaagpi, tls: false, mux: true, skip-cert-verify: false}}
+  - {name: 🇹🇷 土耳其临时 tg@freeVPNjd, server: 45.89.52.66, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+  - {name: 🇯🇵 日本02 tg@freeVPNjd, server: 15.152.34.79, port: 31845, type: vmess, uuid: 323d8b87-345d-4065-b7df-2af764d2d1df, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇱🇺 卢森堡临时 tg@freeVPNjd, server: api-a-asia-3.mcqqn.com, port: 61019, type: ss, cipher: chacha20-ietf-poly1305, password: dbefcef0-836b-4d58-aa05-146f7e63f06f}
+  - {name: 🇯🇵 日本 tg@freeVPNjd, server: api-a-asia-4.mcqqn.com, port: 61002, type: ss, cipher: chacha20-ietf-poly1305, password: dbefcef0-836b-4d58-aa05-146f7e63f06f}
+  - {name: 🇰🇷 韩国 tg@freeVPNjd, server: 43.202.49.222, port: 2333, type: ss, cipher: aes-256-cfb, password: doub.io}
+  - {name: 🇭🇰 香港02 tg@freeVPNjd, server: 45.89.52.66, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y}
+  - {name: 🇭🇰 香港 tg@freeVPNjd, server: dc.xmrthnode.com, port: 42042, type: vmess, uuid: 61a06847-820f-3785-af90-506d3e988a12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /th, headers: {Host: dc.xmrthnode.com}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -21,14 +21,14 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇰🇷 韩国测试 tg@freeVPNjd
-      - 🇸🇬 新加坡01 tg@freeVPNjd
-      - 🇹🇷 土耳其临时 tg@freeVPNjd
-      - 🇸🇬 新加坡02 tg@freeVPNjd
       - 🇨🇳 台湾 tg@freeVPNjd
-      - 🇭🇰 香港 tg@freeVPNjd
-      - 🇭🇰 香港03 tg@freeVPNjd
+      - 🇹🇷 土耳其临时 tg@freeVPNjd
+      - 🇯🇵 日本02 tg@freeVPNjd
+      - 🇱🇺 卢森堡临时 tg@freeVPNjd
+      - 🇯🇵 日本 tg@freeVPNjd
+      - 🇰🇷 韩国 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
-      - 🇸🇬 狮城 tg@freeVPNjd
+      - 🇭🇰 香港 tg@freeVPNjd
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -36,14 +36,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇰🇷 韩国测试 tg@freeVPNjd
-      - 🇸🇬 新加坡01 tg@freeVPNjd
-      - 🇹🇷 土耳其临时 tg@freeVPNjd
-      - 🇸🇬 新加坡02 tg@freeVPNjd
       - 🇨🇳 台湾 tg@freeVPNjd
-      - 🇭🇰 香港 tg@freeVPNjd
-      - 🇭🇰 香港03 tg@freeVPNjd
+      - 🇹🇷 土耳其临时 tg@freeVPNjd
+      - 🇯🇵 日本02 tg@freeVPNjd
+      - 🇱🇺 卢森堡临时 tg@freeVPNjd
+      - 🇯🇵 日本 tg@freeVPNjd
+      - 🇰🇷 韩国 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
-      - 🇸🇬 狮城 tg@freeVPNjd
+      - 🇭🇰 香港 tg@freeVPNjd
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -62,14 +62,14 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇰🇷 韩国测试 tg@freeVPNjd
-      - 🇸🇬 新加坡01 tg@freeVPNjd
-      - 🇹🇷 土耳其临时 tg@freeVPNjd
-      - 🇸🇬 新加坡02 tg@freeVPNjd
       - 🇨🇳 台湾 tg@freeVPNjd
-      - 🇭🇰 香港 tg@freeVPNjd
-      - 🇭🇰 香港03 tg@freeVPNjd
+      - 🇹🇷 土耳其临时 tg@freeVPNjd
+      - 🇯🇵 日本02 tg@freeVPNjd
+      - 🇱🇺 卢森堡临时 tg@freeVPNjd
+      - 🇯🇵 日本 tg@freeVPNjd
+      - 🇰🇷 韩国 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
-      - 🇸🇬 狮城 tg@freeVPNjd
+      - 🇭🇰 香港 tg@freeVPNjd
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
