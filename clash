@@ -5,16 +5,15 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 台湾 tg@freeVPNjd, server: free.themars.top, port: 32103, type: ss, cipher: chacha20-ietf-poly1305, password: 4afe02ad-27ae-4bd5-bd59-4f9850eab7a2}
-  - {name: 🇸🇬 新加坡02 tg@freeVPNjd, server: weo-sg-1.laowufly.cf, port: 23333, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GFW绕过我吧...}
-  - {name: 🇸🇬 狮城 tg@freeVPNjd, server: weo-sg-2.laowufly.cf, port: 12345, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GFW绕过我吧...}
-  - {name: 🇸🇬 新加坡03 tg@freeVPNjd, server: weo-sg-2.laowufly.cf, port: 1234, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GFW绕过我吧...}
-  - {name: 🇸🇬 新加坡01 tg@freeVPNjd, server: weo-sg-1.laowufly.cf, port: 2333, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GFW绕过我吧...}
-  - {name: 🇨🇳 台湾 tg@freeVPNjd 2, server: hinet1.downloadvip.cfd, port: 443, type: trojan, password: 5a67bf67-5af7-4262-a5ec-cd2c03866acd, sni: download.xn--mes358acgm99l.com, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾 tg@freeVPNjd, server: hinet1.downloadvip.cfd, port: 443, type: trojan, password: 5a67bf67-5af7-4262-a5ec-cd2c03866acd, sni: download.xn--mes358acgm99l.com, skip-cert-verify: false}
   - {name: 🇯🇵 日本02 tg@freeVPNjd, server: jp.stablize.top, port: 443, type: trojan, password: a8e47554-718a-4e66-be3c-7289b2a8ee31, skip-cert-verify: false}
   - {name: 🇯🇵 日本01 tg@freeVPNjd, server: 183.213.200.225, port: 28113, type: trojan, password: cdyB1Q, sni: 183.213.200.225, skip-cert-verify: false}
   - {name: 🇭🇰 香港02 tg@freeVPNjd, server: weo-hk-1.weoworks.link, port: 23333, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GoodLuck/GFW绕过我吧...}
   - {name: 🇭🇰 香港 tg@freeVPNjd, server: weo-hk-1.weoworks.link, port: 2333, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GoodLuck/GFW绕过我吧...}
+  - {name: 🇸🇬 狮城 tg@freeVPNjd, server: weo-sg-2.weoworks.link, port: 1234, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GFW绕过我吧...}
+  - {name: 🇸🇬 新加坡03 tg@freeVPNjd, server: weo-sg-2.weoworks.link, port: 12345, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GFW绕过我吧...}
+  - {name: 🇸🇬 新加坡02 tg@freeVPNjd, server: weo-sg-1.weoworks.link, port: 23333, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GFW绕过我吧...}
+  - {name: 🇸🇬 新加坡01 tg@freeVPNjd, server: weo-sg-1.weoworks.link, port: 2333, type: ss, cipher: aes-256-gcm, password: NodeByTG@Weoworks/GFW绕过我吧...}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -22,15 +21,14 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇨🇳 台湾 tg@freeVPNjd
-      - 🇸🇬 新加坡02 tg@freeVPNjd
-      - 🇸🇬 狮城 tg@freeVPNjd
-      - 🇸🇬 新加坡03 tg@freeVPNjd
-      - 🇸🇬 新加坡01 tg@freeVPNjd
-      - 🇨🇳 台湾 tg@freeVPNjd 2
       - 🇯🇵 日本02 tg@freeVPNjd
       - 🇯🇵 日本01 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
       - 🇭🇰 香港 tg@freeVPNjd
+      - 🇸🇬 狮城 tg@freeVPNjd
+      - 🇸🇬 新加坡03 tg@freeVPNjd
+      - 🇸🇬 新加坡02 tg@freeVPNjd
+      - 🇸🇬 新加坡01 tg@freeVPNjd
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -38,15 +36,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇨🇳 台湾 tg@freeVPNjd
-      - 🇸🇬 新加坡02 tg@freeVPNjd
-      - 🇸🇬 狮城 tg@freeVPNjd
-      - 🇸🇬 新加坡03 tg@freeVPNjd
-      - 🇸🇬 新加坡01 tg@freeVPNjd
-      - 🇨🇳 台湾 tg@freeVPNjd 2
       - 🇯🇵 日本02 tg@freeVPNjd
       - 🇯🇵 日本01 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
       - 🇭🇰 香港 tg@freeVPNjd
+      - 🇸🇬 狮城 tg@freeVPNjd
+      - 🇸🇬 新加坡03 tg@freeVPNjd
+      - 🇸🇬 新加坡02 tg@freeVPNjd
+      - 🇸🇬 新加坡01 tg@freeVPNjd
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -65,15 +62,14 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇨🇳 台湾 tg@freeVPNjd
-      - 🇸🇬 新加坡02 tg@freeVPNjd
-      - 🇸🇬 狮城 tg@freeVPNjd
-      - 🇸🇬 新加坡03 tg@freeVPNjd
-      - 🇸🇬 新加坡01 tg@freeVPNjd
-      - 🇨🇳 台湾 tg@freeVPNjd 2
       - 🇯🇵 日本02 tg@freeVPNjd
       - 🇯🇵 日本01 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
       - 🇭🇰 香港 tg@freeVPNjd
+      - 🇸🇬 狮城 tg@freeVPNjd
+      - 🇸🇬 新加坡03 tg@freeVPNjd
+      - 🇸🇬 新加坡02 tg@freeVPNjd
+      - 🇸🇬 新加坡01 tg@freeVPNjd
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -1825,6 +1821,7 @@ rules:
  - DOMAIN-SUFFIX,aiv-cdn.net,🚀 节点选择
  - DOMAIN-SUFFIX,aiv-delivery.net,🚀 节点选择
  - DOMAIN-SUFFIX,amazon.jobs,🚀 节点选择
+ - DOMAIN-SUFFIX,amazontools.com,🚀 节点选择
  - DOMAIN-SUFFIX,amazonuniversity.jobs,🚀 节点选择
  - DOMAIN-SUFFIX,amazonvideo.com,🚀 节点选择
  - DOMAIN-SUFFIX,media-amazon.com,🚀 节点选择
@@ -2011,6 +2008,7 @@ rules:
  - IP-CIDR,192.173.64.0/18,🚀 节点选择,no-resolve
  - IP-CIDR,198.38.96.0/19,🚀 节点选择,no-resolve
  - IP-CIDR,198.45.48.0/20,🚀 节点选择,no-resolve
+ - IP-CIDR,203.75.84.0/24,🚀 节点选择,no-resolve
  - IP-CIDR,207.45.72.0/22,🚀 节点选择,no-resolve
  - IP-CIDR,208.75.76.0/22,🚀 节点选择,no-resolve
  - DOMAIN-SUFFIX,dmc.nico,🚀 节点选择
