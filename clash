@@ -8,10 +8,10 @@ proxies:
   - {name: 🇨🇳 台湾 tg@freeVPNjd, server: cnamemk.ciscocdn1.live, port: 443, type: trojan, password: 4d706727-996f-4427-930d-60f3bd414cf9, sni: c2mk.ciscocdn1.live, skip-cert-verify: false}
   - {name: 🇭🇰 香港 tg@freeVPNjd, server: 15.204.210.176, port: 80, type: trojan, password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f, skip-cert-verify: false}
   - {name: 🇭🇰 香港02 tg@freeVPNjd, server: 15.204.210.176, port: 80, type: trojan, password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f, skip-cert-verify: false}
-  - {name: 🇯🇵 日本 tg@freeVPNjd, server: 173.245.49.236, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}}
+  - {name: 🇯🇵 日本 tg@freeVPNjd, server: cnamemc.cdncisco.org, port: 443, type: trojan, password: 0ad5e311-7189-4124-ac8f-f828b681f10e, sni: c5mc.cdncisco.org, skip-cert-verify: false}
   - {name: 🇯🇵 日本02 tg@freeVPNjd, server: cnamemc.ciscocdn1.live, port: 443, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, sni: c3mc.ciscocdn1.live, skip-cert-verify: false}
   - {name: 🇯🇵 日本03 tg@freeVPNjd, server: pqawssg001.aiopen.cfd, port: 443, type: trojan, password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡 tg@freeVPNjd, server: 163.123.192.154, port: 443, type: trojan, password: d31792a4-b843-469f-9185-4a6111ff7612, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡 tg@freeVPNjd, server: 62.12.116.66, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
   - {name: 🇸🇬 新加坡02 tg@freeVPNjd, server: cnamemc.ciscocdn1.live, port: 443, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, sni: c3mc.ciscocdn1.live, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
