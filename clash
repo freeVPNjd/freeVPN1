@@ -5,21 +5,29 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 台湾 tg@freeVPNjd, server: cnamemk.ciscocdn1.live, port: 443, type: trojan, password: 4d706727-996f-4427-930d-60f3bd414cf9, sni: c2mk.ciscocdn1.live, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 tg@freeVPNjd, server: 15.204.210.176, port: 80, type: trojan, password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f, skip-cert-verify: false}
-  - {name: 🇭🇰 香港02 tg@freeVPNjd, server: 15.204.210.176, port: 80, type: trojan, password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f, skip-cert-verify: false}
-  - {name: 🇯🇵 日本 tg@freeVPNjd, server: cnamemc.cdncisco.org, port: 443, type: trojan, password: 0ad5e311-7189-4124-ac8f-f828b681f10e, sni: c5mc.cdncisco.org, skip-cert-verify: false}
-  - {name: 🇯🇵 日本02 tg@freeVPNjd, server: cnamemc.ciscocdn1.live, port: 443, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, sni: c3mc.ciscocdn1.live, skip-cert-verify: false}
-  - {name: 🇯🇵 日本03 tg@freeVPNjd, server: pqawssg001.aiopen.cfd, port: 443, type: trojan, password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡 tg@freeVPNjd, server: 62.12.116.66, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇸🇬 新加坡02 tg@freeVPNjd, server: cnamemc.ciscocdn1.live, port: 443, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, sni: c3mc.ciscocdn1.live, skip-cert-verify: false}
+  - {name: 🇦🇹 奥地利 tg@freeVPNjd, server: cf.cachexy.my.id, port: 80, client-fingerprint: chrome, type: vless, uuid: 96a353a1-3efc-463d-8144-2bc39dc09861, tls: false, tfo: false, servername: adl1.sfacg.link, skip-cert-verify: false, network: ws, ws-opts: {path: /h6PeMj2L/, headers: {Host: adl1.sfacg.link}}}
+  - {name: 🇨🇦 加拿大 tg@freeVPNjd, server: www.dongtaiwang4.com, port: 22088, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, tfo: false}
+  - {name: 🇨🇳 台湾 tg@freeVPNjd, server: cnamemk.ciscocdn1.live, port: 443, client-fingerprint: chrome, type: trojan, password: 4d706727-996f-4427-930d-60f3bd414cf9, tfo: false, sni: c2mk.ciscocdn1.live, skip-cert-verify: false}
+  - {name: 🇬🇷 希腊 tg@freeVPNjd, server: cf.cachexy.my.id, port: 80, client-fingerprint: chrome, type: vless, uuid: d162bb9f-c7b6-4684-a983-e7758a484858, tls: false, tfo: false, servername: xl1.sfacg.link, skip-cert-verify: false, network: ws, ws-opts: {path: /edU8vDzm/, headers: {Host: xl1.sfacg.link}}}
+  - {name: 🇭🇰 香港 tg@freeVPNjd, server: 15.204.210.176, port: 80, client-fingerprint: chrome, type: trojan, password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f, tfo: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港02 tg@freeVPNjd, server: 15.204.210.176, port: 80, client-fingerprint: chrome, type: trojan, password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f, tfo: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本 tg@freeVPNjd, server: cnamemc.cdncisco.org, port: 443, client-fingerprint: chrome, type: trojan, password: 0ad5e311-7189-4124-ac8f-f828b681f10e, tfo: false, sni: c5mc.cdncisco.org, skip-cert-verify: false}
+  - {name: 🇯🇵 日本02 tg@freeVPNjd, server: cnamemc.ciscocdn1.live, port: 443, client-fingerprint: chrome, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, tfo: false, sni: c3mc.ciscocdn1.live, skip-cert-verify: false}
+  - {name: 🇯🇵 日本03 tg@freeVPNjd, server: pqawssg001.aiopen.cfd, port: 443, client-fingerprint: chrome, type: trojan, password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b, tfo: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡 tg@freeVPNjd, server: 62.12.116.66, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false}
+  - {name: 🇸🇬 新加坡02 tg@freeVPNjd, server: cnamemc.ciscocdn1.live, port: 443, client-fingerprint: chrome, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, tfo: false, sni: c3mc.ciscocdn1.live, skip-cert-verify: false}
+  - {name: 🇹🇷 土耳其临时 tg@freeVPNjd, server: cf.cachexy.my.id, port: 80, client-fingerprint: chrome, type: vless, uuid: e38ae025-609c-4810-b376-0a6084a8413d, tls: false, tfo: false, servername: tr1.sfacg.link, skip-cert-verify: false, network: ws, ws-opts: {path: /YQpDnIOj/, headers: {Host: tr1.sfacg.link}}}
+  - {name: 🇻🇳 越南 tg@freeVPNjd, server: cf.cachexy.my.id, port: 80, client-fingerprint: chrome, type: vless, uuid: e4752e23-601a-40c3-9f73-acfcfb1bc616, tls: false, tfo: false, servername: yl1.sfacg.link, skip-cert-verify: false, network: ws, ws-opts: {path: /5fWvozZb/, headers: {Host: yl1.sfacg.link}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇦🇹 奥地利 tg@freeVPNjd
+      - 🇨🇦 加拿大 tg@freeVPNjd
       - 🇨🇳 台湾 tg@freeVPNjd
+      - 🇬🇷 希腊 tg@freeVPNjd
       - 🇭🇰 香港 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
       - 🇯🇵 日本 tg@freeVPNjd
@@ -27,13 +35,18 @@ proxy-groups:
       - 🇯🇵 日本03 tg@freeVPNjd
       - 🇸🇬 新加坡 tg@freeVPNjd
       - 🇸🇬 新加坡02 tg@freeVPNjd
+      - 🇹🇷 土耳其临时 tg@freeVPNjd
+      - 🇻🇳 越南 tg@freeVPNjd
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇦🇹 奥地利 tg@freeVPNjd
+      - 🇨🇦 加拿大 tg@freeVPNjd
       - 🇨🇳 台湾 tg@freeVPNjd
+      - 🇬🇷 希腊 tg@freeVPNjd
       - 🇭🇰 香港 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
       - 🇯🇵 日本 tg@freeVPNjd
@@ -41,6 +54,8 @@ proxy-groups:
       - 🇯🇵 日本03 tg@freeVPNjd
       - 🇸🇬 新加坡 tg@freeVPNjd
       - 🇸🇬 新加坡02 tg@freeVPNjd
+      - 🇹🇷 土耳其临时 tg@freeVPNjd
+      - 🇻🇳 越南 tg@freeVPNjd
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -58,7 +73,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇦🇹 奥地利 tg@freeVPNjd
+      - 🇨🇦 加拿大 tg@freeVPNjd
       - 🇨🇳 台湾 tg@freeVPNjd
+      - 🇬🇷 希腊 tg@freeVPNjd
       - 🇭🇰 香港 tg@freeVPNjd
       - 🇭🇰 香港02 tg@freeVPNjd
       - 🇯🇵 日本 tg@freeVPNjd
@@ -66,6 +84,8 @@ proxy-groups:
       - 🇯🇵 日本03 tg@freeVPNjd
       - 🇸🇬 新加坡 tg@freeVPNjd
       - 🇸🇬 新加坡02 tg@freeVPNjd
+      - 🇹🇷 土耳其临时 tg@freeVPNjd
+      - 🇻🇳 越南 tg@freeVPNjd
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
