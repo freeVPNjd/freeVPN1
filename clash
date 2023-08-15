@@ -17,6 +17,9 @@ proxies:
   - {name: 日本02 tg@freeVPNjd, server: cnamemc.ciscocdn1.live, port: 443, client-fingerprint: chrome, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, tfo: false, sni: c3mc.ciscocdn1.live, skip-cert-verify: false}
   - {name: 日本03 tg@freeVPNjd, server: pqawssg001.aiopen.cfd, port: 443, client-fingerprint: chrome, type: trojan, password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b, tfo: false, skip-cert-verify: false}
   - {name: 日本04 tg@freeVPNjd, server: kbawsjp2.aiopen.cfd, port: 443, client-fingerprint: chrome, type: trojan, password: 3c1f22a0-2aec-46ed-b0ee-9c09b8cafa1d, tfo: false, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 日本临时 tg@freeVPNjd, server: gsawshk1.aiopen.cfd, port: 443, client-fingerprint: chrome, type: trojan, password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7, tfo: false, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 日本临时02 tg@freeVPNjd, server: gsawshk2.aiopen.cfd, port: 443, client-fingerprint: chrome, type: trojan, password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7, tfo: false, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 日本临时03 tg@freeVPNjd, server: gsawsjp1.aiopen.cfd, port: 443, client-fingerprint: chrome, type: trojan, password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7, tfo: false, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: false}
   - {name: 越南 tg@freeVPNjd, server: cf.cachexy.my.id, port: 80, client-fingerprint: chrome, type: vless, uuid: e4752e23-601a-40c3-9f73-acfcfb1bc616, tls: false, tfo: false, servername: yl1.sfacg.link, skip-cert-verify: false, network: ws, ws-opts: {path: /5fWvozZb/, headers: {Host: yl1.sfacg.link}}}
   - {name: 香港 tg@freeVPNjd, server: 15.204.210.176, port: 80, client-fingerprint: chrome, type: trojan, password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f, tfo: false, skip-cert-verify: false}
   - {name: 香港02 tg@freeVPNjd, server: 15.204.210.176, port: 80, client-fingerprint: chrome, type: trojan, password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f, tfo: false, skip-cert-verify: false}
@@ -38,6 +41,9 @@ proxy-groups:
       - 日本02 tg@freeVPNjd
       - 日本03 tg@freeVPNjd
       - 日本04 tg@freeVPNjd
+      - 日本临时 tg@freeVPNjd
+      - 日本临时02 tg@freeVPNjd
+      - 日本临时03 tg@freeVPNjd
       - 越南 tg@freeVPNjd
       - 香港 tg@freeVPNjd
       - 香港02 tg@freeVPNjd
@@ -59,6 +65,9 @@ proxy-groups:
       - 日本02 tg@freeVPNjd
       - 日本03 tg@freeVPNjd
       - 日本04 tg@freeVPNjd
+      - 日本临时 tg@freeVPNjd
+      - 日本临时02 tg@freeVPNjd
+      - 日本临时03 tg@freeVPNjd
       - 越南 tg@freeVPNjd
       - 香港 tg@freeVPNjd
       - 香港02 tg@freeVPNjd
@@ -91,6 +100,9 @@ proxy-groups:
       - 日本02 tg@freeVPNjd
       - 日本03 tg@freeVPNjd
       - 日本04 tg@freeVPNjd
+      - 日本临时 tg@freeVPNjd
+      - 日本临时02 tg@freeVPNjd
+      - 日本临时03 tg@freeVPNjd
       - 越南 tg@freeVPNjd
       - 香港 tg@freeVPNjd
       - 香港02 tg@freeVPNjd
