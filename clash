@@ -6,7 +6,6 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 台湾 tg@freeVPNjd, server: cnamemk.ciscocdn1.live, port: 443, client-fingerprint: chrome, type: trojan, password: 4d706727-996f-4427-930d-60f3bd414cf9, tfo: false, sni: c2mk.ciscocdn1.live, skip-cert-verify: false}
-  - {name: 土耳其临时 tg@freeVPNjd, server: cf.cachexy.my.id, port: 80, client-fingerprint: chrome, type: vless, uuid: e38ae025-609c-4810-b376-0a6084a8413d, tls: false, tfo: false, servername: tr1.sfacg.link, skip-cert-verify: false, network: ws, ws-opts: {path: /YQpDnIOj/, headers: {Host: tr1.sfacg.link}}}
   - {name: 新加坡 tg@freeVPNjd, server: 62.12.116.66, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false}
   - {name: 新加坡02 tg@freeVPNjd, server: cnamemc.ciscocdn1.live, port: 443, client-fingerprint: chrome, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, tfo: false, sni: c3mc.ciscocdn1.live, skip-cert-verify: false}
   - {name: 日本 tg@freeVPNjd, server: cnamemc.cdncisco.org, port: 443, client-fingerprint: chrome, type: trojan, password: 0ad5e311-7189-4124-ac8f-f828b681f10e, tfo: false, sni: c5mc.cdncisco.org, skip-cert-verify: false}
@@ -25,7 +24,6 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 台湾 tg@freeVPNjd
-      - 土耳其临时 tg@freeVPNjd
       - 新加坡 tg@freeVPNjd
       - 新加坡02 tg@freeVPNjd
       - 日本 tg@freeVPNjd
@@ -44,7 +42,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 台湾 tg@freeVPNjd
-      - 土耳其临时 tg@freeVPNjd
       - 新加坡 tg@freeVPNjd
       - 新加坡02 tg@freeVPNjd
       - 日本 tg@freeVPNjd
@@ -74,7 +71,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 台湾 tg@freeVPNjd
-      - 土耳其临时 tg@freeVPNjd
       - 新加坡 tg@freeVPNjd
       - 新加坡02 tg@freeVPNjd
       - 日本 tg@freeVPNjd
