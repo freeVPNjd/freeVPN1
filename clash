@@ -6,8 +6,7 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 台湾 tg@freeVPNjd, server: cnamemk.ciscocdn1.live, port: 443, client-fingerprint: chrome, type: trojan, password: 4d706727-996f-4427-930d-60f3bd414cf9, tfo: false, sni: c2mk.ciscocdn1.live, skip-cert-verify: false}
-  - {name: 新加坡 tg@freeVPNjd, server: 62.12.116.66, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false}
-  - {name: 新加坡02 tg@freeVPNjd, server: cnamemc.ciscocdn1.live, port: 443, client-fingerprint: chrome, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, tfo: false, sni: c3mc.ciscocdn1.live, skip-cert-verify: false}
+  - {name: 新加坡 tg@freeVPNjd, server: cnamemc.ciscocdn1.live, port: 443, client-fingerprint: chrome, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, tfo: false, sni: c3mc.ciscocdn1.live, skip-cert-verify: false}
   - {name: 日本 tg@freeVPNjd, server: cnamemc.cdncisco.org, port: 443, client-fingerprint: chrome, type: trojan, password: 0ad5e311-7189-4124-ac8f-f828b681f10e, tfo: false, sni: c5mc.cdncisco.org, skip-cert-verify: false}
   - {name: 日本02 tg@freeVPNjd, server: cnamemc.ciscocdn1.live, port: 443, client-fingerprint: chrome, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, tfo: false, sni: c3mc.ciscocdn1.live, skip-cert-verify: false}
   - {name: 日本03 tg@freeVPNjd, server: pqawssg001.aiopen.cfd, port: 443, client-fingerprint: chrome, type: trojan, password: 17c0c3fe-0e7e-4d75-8011-ebb46fea532b, tfo: false, skip-cert-verify: false}
@@ -15,8 +14,7 @@ proxies:
   - {name: 日本临时 tg@freeVPNjd, server: gsawshk1.aiopen.cfd, port: 443, client-fingerprint: chrome, type: trojan, password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7, tfo: false, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: false}
   - {name: 日本临时02 tg@freeVPNjd, server: gsawshk2.aiopen.cfd, port: 443, client-fingerprint: chrome, type: trojan, password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7, tfo: false, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: false}
   - {name: 日本临时03 tg@freeVPNjd, server: gsawsjp1.aiopen.cfd, port: 443, client-fingerprint: chrome, type: trojan, password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7, tfo: false, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 香港 tg@freeVPNjd, server: 15.204.210.176, port: 80, client-fingerprint: chrome, type: trojan, password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f, tfo: false, skip-cert-verify: false}
-  - {name: 香港02 tg@freeVPNjd, server: 15.204.210.176, port: 80, client-fingerprint: chrome, type: trojan, password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f, tfo: false, skip-cert-verify: false}
+  - {name: 香港 tg@freeVPNjd, server: 120.226.50.92, port: 53300, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -25,7 +23,6 @@ proxy-groups:
       - DIRECT
       - 台湾 tg@freeVPNjd
       - 新加坡 tg@freeVPNjd
-      - 新加坡02 tg@freeVPNjd
       - 日本 tg@freeVPNjd
       - 日本02 tg@freeVPNjd
       - 日本03 tg@freeVPNjd
@@ -34,7 +31,6 @@ proxy-groups:
       - 日本临时02 tg@freeVPNjd
       - 日本临时03 tg@freeVPNjd
       - 香港 tg@freeVPNjd
-      - 香港02 tg@freeVPNjd
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -43,7 +39,6 @@ proxy-groups:
     proxies:
       - 台湾 tg@freeVPNjd
       - 新加坡 tg@freeVPNjd
-      - 新加坡02 tg@freeVPNjd
       - 日本 tg@freeVPNjd
       - 日本02 tg@freeVPNjd
       - 日本03 tg@freeVPNjd
@@ -52,7 +47,6 @@ proxy-groups:
       - 日本临时02 tg@freeVPNjd
       - 日本临时03 tg@freeVPNjd
       - 香港 tg@freeVPNjd
-      - 香港02 tg@freeVPNjd
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -72,7 +66,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 台湾 tg@freeVPNjd
       - 新加坡 tg@freeVPNjd
-      - 新加坡02 tg@freeVPNjd
       - 日本 tg@freeVPNjd
       - 日本02 tg@freeVPNjd
       - 日本03 tg@freeVPNjd
@@ -81,7 +74,6 @@ proxy-groups:
       - 日本临时02 tg@freeVPNjd
       - 日本临时03 tg@freeVPNjd
       - 香港 tg@freeVPNjd
-      - 香港02 tg@freeVPNjd
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
