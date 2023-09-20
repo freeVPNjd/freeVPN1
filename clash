@@ -6,7 +6,7 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 卢森堡 tg@freeVPNjd, server: Mvirtua.com, port: 2052, client-fingerprint: chrome, type: vmess, uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lu.wx.alue.link}}}
-  - {name: 新加坡 tg@freeVPNjd, server: sg1.wyhkaa0.cf, port: 80, client-fingerprint: chrome, type: vmess, uuid: f4575c03-8145-4612-a1b2-7a48117f6fc2, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: sg1.wyhkaa0.cf}}}
+  - {name: 美国 tg@freeVPNjd, server: Mvirtua.com, port: 2052, client-fingerprint: chrome, type: vmess, uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us.wx.alue.link}}}
   - {name: 香港 tg@freeVPNjd, server: rpete-1096-tr-3.r-kcd-e.iote.bond, port: 29989, client-fingerprint: chrome, type: trojan, password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY, tfo: false, sni: cdn.cjhh.lol, skip-cert-verify: false}
   - {name: 香港02 tg@freeVPNjd, server: rpete-1096-tr-3.r-kcd-e.iote.bond, port: 29989, client-fingerprint: chrome, type: trojan, password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY, tfo: false, sni: cdn.cjhh.lol, skip-cert-verify: false}
 proxy-groups:
@@ -16,7 +16,7 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 卢森堡 tg@freeVPNjd
-      - 新加坡 tg@freeVPNjd
+      - 美国 tg@freeVPNjd
       - 香港 tg@freeVPNjd
       - 香港02 tg@freeVPNjd
   - name: ♻️ 自动选择
@@ -26,7 +26,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 卢森堡 tg@freeVPNjd
-      - 新加坡 tg@freeVPNjd
+      - 美国 tg@freeVPNjd
       - 香港 tg@freeVPNjd
       - 香港02 tg@freeVPNjd
   - name: 🎯 全球直连
@@ -47,7 +47,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 卢森堡 tg@freeVPNjd
-      - 新加坡 tg@freeVPNjd
+      - 美国 tg@freeVPNjd
       - 香港 tg@freeVPNjd
       - 香港02 tg@freeVPNjd
 rules:
