@@ -6,10 +6,10 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 卢森堡 tg@freeVPNjd, server: Mvirtua.com, port: 2052, client-fingerprint: chrome, type: vmess, uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lu.wx.alue.link}}}
+  - {name: 日本 tg@freeVPNjd, server: 18.183.142.132, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
   - {name: 美国 tg@freeVPNjd, server: Mvirtua.com, port: 2052, client-fingerprint: chrome, type: vmess, uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us.wx.alue.link}}}
-  - {name: 香港 tg@freeVPNjd, server: rpete-1096-tr-3.r-kcd-e.iote.bond, port: 29989, client-fingerprint: chrome, type: trojan, password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY, tfo: false, sni: cdn.cjhh.lol, skip-cert-verify: false}
   - {name: 香港02 tg@freeVPNjd, server: rpete-1096-tr-3.r-kcd-e.iote.bond, port: 29989, client-fingerprint: chrome, type: trojan, password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY, tfo: false, sni: cdn.cjhh.lol, skip-cert-verify: false}
-  - {name: 香港03 tg@freeVPNjd, server: fgddt-1082-tr-4.r-kcd-a.tuil.xyz, port: 39909, client-fingerprint: chrome, type: trojan, password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY, tfo: false, sni: s3.cjhh.beauty, skip-cert-verify: false}
+  - {name: 香港03 tg@freeVPNjd, server: 202.181.25.18, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 2c8b8e83c082, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: yjy3.viynos.com, path: /bnftmarohnw, tls: true, mux: true, skip-cert-verify: false}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -17,8 +17,8 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 卢森堡 tg@freeVPNjd
+      - 日本 tg@freeVPNjd
       - 美国 tg@freeVPNjd
-      - 香港 tg@freeVPNjd
       - 香港02 tg@freeVPNjd
       - 香港03 tg@freeVPNjd
   - name: ♻️ 自动选择
@@ -28,8 +28,8 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 卢森堡 tg@freeVPNjd
+      - 日本 tg@freeVPNjd
       - 美国 tg@freeVPNjd
-      - 香港 tg@freeVPNjd
       - 香港02 tg@freeVPNjd
       - 香港03 tg@freeVPNjd
   - name: 🎯 全球直连
@@ -50,8 +50,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 卢森堡 tg@freeVPNjd
+      - 日本 tg@freeVPNjd
       - 美国 tg@freeVPNjd
-      - 香港 tg@freeVPNjd
       - 香港02 tg@freeVPNjd
       - 香港03 tg@freeVPNjd
 rules:
