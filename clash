@@ -5,10 +5,10 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本 tg@freeVPNjd, server: 27.namesilo123.top, port: 8080, client-fingerprint: chrome, type: vmess, uuid: 2acd8205-4991-4e19-ba45-bb7d45d6a7e0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: freeus1.sanfen002.top}}}
-  - {name: 美国 tg@freeVPNjd, server: idc.hytron.io, port: 2052, client-fingerprint: chrome, type: vmess, uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us.wx.alue.link}}}
+  - {name: 日本 tg@freeVPNjd, server: 28.namesilo123.top, port: 80, client-fingerprint: chrome, type: vmess, uuid: 2acd8205-4991-4e19-ba45-bb7d45d6a7e0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: freeus1.sanfen002.top}}}
+  - {name: 美国 tg@freeVPNjd, server: 29.namesilo123.top, port: 8880, client-fingerprint: chrome, type: vmess, uuid: 2acd8205-4991-4e19-ba45-bb7d45d6a7e0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: freeus1.sanfen002.top}}}
   - {name: 香港 tg@freeVPNjd, server: 26.namesilo123.top, port: 2082, client-fingerprint: chrome, type: vmess, uuid: 2acd8205-4991-4e19-ba45-bb7d45d6a7e0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: freeus1.sanfen002.top}}}
-  - {name: 香港03 tg@freeVPNjd, server: 29.namesilo123.top, port: 8880, client-fingerprint: chrome, type: vmess, uuid: 2acd8205-4991-4e19-ba45-bb7d45d6a7e0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: freeus1.sanfen002.top}}}
+  - {name: 香港03 tg@freeVPNjd, server: 27.namesilo123.top, port: 8080, client-fingerprint: chrome, type: vmess, uuid: 2acd8205-4991-4e19-ba45-bb7d45d6a7e0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: freeus1.sanfen002.top}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
