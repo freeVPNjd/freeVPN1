@@ -5,36 +5,30 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 加拿大多伦多 tg@freeVPNjd, server: cadld2.gophers.gay, port: 21103, type: vmess, uuid: b2e50656-3de0-415f-d90d-e6250088ba58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cadld2.gophers.gay}}}
-  - {name: 日本02 tg@freeVPNjd, server: jp.kunlun-ppg.com, port: 10813, type: trojan, password: 5fd0a603-8b8b-4d68-b3e3-6b2264045f12, sni: alibaba-node.cn, skip-cert-verify: false}
-  - {name: 日本03 tg@freeVPNjd, server: jp.kunlun-ppg.com, port: 10814, type: trojan, password: 5fd0a603-8b8b-4d68-b3e3-6b2264045f12, sni: alibaba-node.cn, skip-cert-verify: false}
-  - {name: 澳大利亚 tg@freeVPNjd, server: cadld2.gophers.gay, port: 21104, type: vmess, uuid: b8b22d0d-a939-4e19-fd61-0a2c7a02e86d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cadld2.gophers.gay}}}
-  - {name: 香港02 tg@freeVPNjd, server: hk.kunlun-ppg.com, port: 10808, type: trojan, password: 5fd0a603-8b8b-4d68-b3e3-6b2264045f12, sni: alibaba-node.cn, skip-cert-verify: false}
-  - {name: 香港03 tg@freeVPNjd, server: hk.kunlun-ppg.com, port: 10807, type: trojan, password: 5fd0a603-8b8b-4d68-b3e3-6b2264045f12, sni: alibaba-node.cn, skip-cert-verify: false}
+  - {name: 新加坡 tg@freeVPNjd, server: 27.namesilo123.top, port: 8080, type: vmess, uuid: 1bfabd7e-8fbb-41df-9fe9-ea56f11077a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: freeus1.sanfen002.top}}}
+  - {name: 日本02 tg@freeVPNjd, server: 28.namesilo123.top, port: 80, type: vmess, uuid: 1bfabd7e-8fbb-41df-9fe9-ea56f11077a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: freeus1.sanfen002.top}}}
+  - {name: 美国 tg@freeVPNjd, server: 29.namesilo123.top, port: 8880, type: vmess, uuid: 1bfabd7e-8fbb-41df-9fe9-ea56f11077a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: freeus1.sanfen002.top}}}
+  - {name: 香港02 tg@freeVPNjd, server: 26.namesilo123.top, port: 2082, type: vmess, uuid: 1bfabd7e-8fbb-41df-9fe9-ea56f11077a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: freeus1.sanfen002.top}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 加拿大多伦多 tg@freeVPNjd
+      - 新加坡 tg@freeVPNjd
       - 日本02 tg@freeVPNjd
-      - 日本03 tg@freeVPNjd
-      - 澳大利亚 tg@freeVPNjd
+      - 美国 tg@freeVPNjd
       - 香港02 tg@freeVPNjd
-      - 香港03 tg@freeVPNjd
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 加拿大多伦多 tg@freeVPNjd
+      - 新加坡 tg@freeVPNjd
       - 日本02 tg@freeVPNjd
-      - 日本03 tg@freeVPNjd
-      - 澳大利亚 tg@freeVPNjd
+      - 美国 tg@freeVPNjd
       - 香港02 tg@freeVPNjd
-      - 香港03 tg@freeVPNjd
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -52,12 +46,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 加拿大多伦多 tg@freeVPNjd
+      - 新加坡 tg@freeVPNjd
       - 日本02 tg@freeVPNjd
-      - 日本03 tg@freeVPNjd
-      - 澳大利亚 tg@freeVPNjd
+      - 美国 tg@freeVPNjd
       - 香港02 tg@freeVPNjd
-      - 香港03 tg@freeVPNjd
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
