@@ -15,7 +15,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 新加坡 tg@freeVPNjd, server: 27.namesilo123.top, port: 8080, client-fingerprint: chrome, type: vmess, uuid: 1bfabd7e-8fbb-41df-9fe9-ea56f11077a6, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: freeus1.sanfen002.top}}}
+  - {name: SG tg@freeVPNjd, server: api2.lp-airdrop.top, port: 11112, client-fingerprint: chrome, type: vmess, uuid: fc562532-1c11-4367-89e7-b2509e4f936a, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false}
   - {name: 日本 tg@freeVPNjd, server: mianfei2.aiswangluo.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 8d21dd74-23b1-469d-a92f-13f9e9e8f25a, tls: true, tfo: false, servername: ais.tiktokzx.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ais.tiktokzx.xyz}}}
   - {name: 日本02 tg@freeVPNjd, server: mianfei.aiswangluo.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 8d21dd74-23b1-469d-a92f-13f9e9e8f25a, tls: true, tfo: false, servername: ais.tiktokzx.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ais.tiktokzx.xyz}}}
   - {name: 日本03 tg@freeVPNjd, server: mianfei3.aiswangluo.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 8d21dd74-23b1-469d-a92f-13f9e9e8f25a, tls: true, tfo: false, servername: ais.tiktokzx.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ais.tiktokzx.xyz}}}
@@ -28,7 +28,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 新加坡 tg@freeVPNjd
+      - SG tg@freeVPNjd
       - 日本 tg@freeVPNjd
       - 日本02 tg@freeVPNjd
       - 日本03 tg@freeVPNjd
@@ -41,7 +41,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 新加坡 tg@freeVPNjd
+      - SG tg@freeVPNjd
       - 日本 tg@freeVPNjd
       - 日本02 tg@freeVPNjd
       - 日本03 tg@freeVPNjd
@@ -65,7 +65,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 tg@freeVPNjd
+      - SG tg@freeVPNjd
       - 日本 tg@freeVPNjd
       - 日本02 tg@freeVPNjd
       - 日本03 tg@freeVPNjd
