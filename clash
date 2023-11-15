@@ -15,24 +15,18 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: SG tg@freeVPNjd, server: api2.lp-airdrop.top, port: 11112, client-fingerprint: chrome, type: vmess, uuid: fc562532-1c11-4367-89e7-b2509e4f936a, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false}
-  - {name: 日本 tg@freeVPNjd, server: mianfei2.aiswangluo.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 8d21dd74-23b1-469d-a92f-13f9e9e8f25a, tls: true, tfo: false, servername: ais.tiktokzx.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ais.tiktokzx.xyz}}}
-  - {name: 日本02 tg@freeVPNjd, server: mianfei.aiswangluo.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 8d21dd74-23b1-469d-a92f-13f9e9e8f25a, tls: true, tfo: false, servername: ais.tiktokzx.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ais.tiktokzx.xyz}}}
-  - {name: 日本03 tg@freeVPNjd, server: mianfei3.aiswangluo.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 8d21dd74-23b1-469d-a92f-13f9e9e8f25a, tls: true, tfo: false, servername: ais.tiktokzx.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ais.tiktokzx.xyz}}}
-  - {name: 美国 tg@freeVPNjd, server: 29.namesilo123.top, port: 8880, client-fingerprint: chrome, type: vmess, uuid: 1bfabd7e-8fbb-41df-9fe9-ea56f11077a6, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: freeus1.sanfen002.top}}}
-  - {name: 香港 tg@freeVPNjd, server: mianfei4.aiswangluo.com, port: 443, client-fingerprint: chrome, type: vless, uuid: 8d21dd74-23b1-469d-a92f-13f9e9e8f25a, tls: true, tfo: false, servername: ais.tiktokzx.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ais.tiktokzx.xyz}}}
-  - {name: 香港02 tg@freeVPNjd, server: 26.namesilo123.top, port: 2082, client-fingerprint: chrome, type: vmess, uuid: 1bfabd7e-8fbb-41df-9fe9-ea56f11077a6, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: freeus1.sanfen002.top}}}
+  - {name: 美国01 tg@freeVPNjd, server: 26.namesilo123.top, port: 2082, type: vmess, uuid: 2acd8205-4991-4e19-ba45-bb7d45d6a7e0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: uszhang.sanfen002.top}}}
+  - {name: 美国02 tg@freeVPNjd, server: 28.namesilo123.top, port: 80, type: vmess, uuid: 2acd8205-4991-4e19-ba45-bb7d45d6a7e0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: uszhang.sanfen002.top}}}
+  - {name: 香港 tg@freeVPNjd, server: 27.namesilo123.top, port: 8080, type: vmess, uuid: 2acd8205-4991-4e19-ba45-bb7d45d6a7e0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: uszhang.sanfen002.top}}}
+  - {name: 香港02 tg@freeVPNjd, server: 29.namesilo123.top, port: 8880, type: vmess, uuid: 2acd8205-4991-4e19-ba45-bb7d45d6a7e0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: uszhang.sanfen002.top}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - SG tg@freeVPNjd
-      - 日本 tg@freeVPNjd
-      - 日本02 tg@freeVPNjd
-      - 日本03 tg@freeVPNjd
-      - 美国 tg@freeVPNjd
+      - 美国01 tg@freeVPNjd
+      - 美国02 tg@freeVPNjd
       - 香港 tg@freeVPNjd
       - 香港02 tg@freeVPNjd
   - name: ♻️ 自动选择
@@ -41,11 +35,8 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - SG tg@freeVPNjd
-      - 日本 tg@freeVPNjd
-      - 日本02 tg@freeVPNjd
-      - 日本03 tg@freeVPNjd
-      - 美国 tg@freeVPNjd
+      - 美国01 tg@freeVPNjd
+      - 美国02 tg@freeVPNjd
       - 香港 tg@freeVPNjd
       - 香港02 tg@freeVPNjd
   - name: 🎯 全球直连
@@ -65,11 +56,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG tg@freeVPNjd
-      - 日本 tg@freeVPNjd
-      - 日本02 tg@freeVPNjd
-      - 日本03 tg@freeVPNjd
-      - 美国 tg@freeVPNjd
+      - 美国01 tg@freeVPNjd
+      - 美国02 tg@freeVPNjd
       - 香港 tg@freeVPNjd
       - 香港02 tg@freeVPNjd
 rules:
