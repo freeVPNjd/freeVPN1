@@ -15,30 +15,48 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 美国01 tg@freeVPNjd, server: 26.namesilo123.top, port: 2082, type: vmess, uuid: 2acd8205-4991-4e19-ba45-bb7d45d6a7e0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: uszhang.sanfen002.top}}}
-  - {name: 美国02 tg@freeVPNjd, server: 28.namesilo123.top, port: 80, type: vmess, uuid: 2acd8205-4991-4e19-ba45-bb7d45d6a7e0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: uszhang.sanfen002.top}}}
-  - {name: 香港 tg@freeVPNjd, server: 27.namesilo123.top, port: 8080, type: vmess, uuid: 2acd8205-4991-4e19-ba45-bb7d45d6a7e0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: uszhang.sanfen002.top}}}
-  - {name: 香港02 tg@freeVPNjd, server: 29.namesilo123.top, port: 8880, type: vmess, uuid: 2acd8205-4991-4e19-ba45-bb7d45d6a7e0, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/grdhhgrdhhhhhhj?ed=2048", headers: {Host: uszhang.sanfen002.top}}}
+  - {name: 加拿大 tg@freeVPNjd, server: 61.240.29.214, port: 12127, type: vmess, uuid: 8af599cb-6e43-4ad0-8c08-203963297ce8, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: ca.ccddos.link}}}
+  - {name: 土耳其 tg@freeVPNjd, server: 14.116.252.142, port: 50038, type: vmess, uuid: 8af599cb-6e43-4ad0-8c08-203963297ce8, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: tr.k8s.now.cc, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: yydstr}}
+  - {name: 新加坡 tg@freeVPNjd, server: hk.yydsb.link, port: 34237, type: vmess, uuid: 8af599cb-6e43-4ad0-8c08-203963297ce8, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: nf.k8s.now.cc, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: yydsnf}}
+  - {name: 日本 tg@freeVPNjd, server: nrt.yydsb.link, port: 443, type: vmess, uuid: 8af599cb-6e43-4ad0-8c08-203963297ce8, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: jp.k8s.now.cc, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: yydsjp}}
+  - {name: 美国 tg@freeVPNjd, server: 120.232.9.168, port: 33444, type: vmess, uuid: 8af599cb-6e43-4ad0-8c08-203963297ce8, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: us.k8s.now.cc, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: yydscf}}
+  - {name: 美国2 tg@freeVPNjd, server: cf.yydsb.link, port: 443, type: vmess, uuid: 8af599cb-6e43-4ad0-8c08-203963297ce8, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: de.k8s.now.cc, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: de.k8s.now.cc}}}
+  - {name: 韩国 tg@freeVPNjd, server: kr.yydsb.link, port: 30002, type: vmess, uuid: 8af599cb-6e43-4ad0-8c08-203963297ce8, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: kr.node.now.cc, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: yydskr}}
+  - {name: 韩国02 tg@freeVPNjd, server: 120.197.97.217, port: 56443, type: vmess, uuid: 8af599cb-6e43-4ad0-8c08-203963297ce8, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: kr.docker.mom, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: kryyds}}
+  - {name: 韩国03 tg@freeVPNjd, server: krse5.gophers.gay, port: 31188, type: vmess, uuid: 8af599cb-6e43-4ad0-8c08-203963297ce8, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: krse5.gophers.gay}}}
+  - {name: 香港 tg@freeVPNjd, server: 43.139.93.171, port: 7070, type: vmess, uuid: 8af599cb-6e43-4ad0-8c08-203963297ce8, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: hk.cloudflare.mom, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: hkyydsnf}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 美国01 tg@freeVPNjd
-      - 美国02 tg@freeVPNjd
+      - 加拿大 tg@freeVPNjd
+      - 土耳其 tg@freeVPNjd
+      - 新加坡 tg@freeVPNjd
+      - 日本 tg@freeVPNjd
+      - 美国 tg@freeVPNjd
+      - 美国2 tg@freeVPNjd
+      - 韩国 tg@freeVPNjd
+      - 韩国02 tg@freeVPNjd
+      - 韩国03 tg@freeVPNjd
       - 香港 tg@freeVPNjd
-      - 香港02 tg@freeVPNjd
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 美国01 tg@freeVPNjd
-      - 美国02 tg@freeVPNjd
+      - 加拿大 tg@freeVPNjd
+      - 土耳其 tg@freeVPNjd
+      - 新加坡 tg@freeVPNjd
+      - 日本 tg@freeVPNjd
+      - 美国 tg@freeVPNjd
+      - 美国2 tg@freeVPNjd
+      - 韩国 tg@freeVPNjd
+      - 韩国02 tg@freeVPNjd
+      - 韩国03 tg@freeVPNjd
       - 香港 tg@freeVPNjd
-      - 香港02 tg@freeVPNjd
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -56,10 +74,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国01 tg@freeVPNjd
-      - 美国02 tg@freeVPNjd
+      - 加拿大 tg@freeVPNjd
+      - 土耳其 tg@freeVPNjd
+      - 新加坡 tg@freeVPNjd
+      - 日本 tg@freeVPNjd
+      - 美国 tg@freeVPNjd
+      - 美国2 tg@freeVPNjd
+      - 韩国 tg@freeVPNjd
+      - 韩国02 tg@freeVPNjd
+      - 韩国03 tg@freeVPNjd
       - 香港 tg@freeVPNjd
-      - 香港02 tg@freeVPNjd
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
