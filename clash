@@ -15,39 +15,33 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 新加坡 tg@freeVPNjd, server: service.ouluyun9803.com, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: 280de22e-8642-4dc4-82e2-fac290ea9489, tfo: false}
-  - {name: 日本 tg@freeVPNjd, server: service.ouluyun9803.com, port: 50004, type: ss, cipher: chacha20-ietf-poly1305, password: 280de22e-8642-4dc4-82e2-fac290ea9489, tfo: false}
   - {name: 美国 tg@freeVPNjd, server: 112.29.94.23, port: 43526, type: vmess, uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: 美国 tg@freeVPNjd 2, server: 112.29.94.23, port: 43526, type: vmess, uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: 美国 tg@freeVPNjd 3, server: 188.214.157.5, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false}
   - {name: 香港 tg@freeVPNjd, server: 8.210.85.62, port: 80, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, tfo: false, plugin: obfs, plugin-opts: {mode: http, host: ""}}
-  - {name: 香港2 tg@freeVPNjd, server: bs1.jymzffbquawl.com, port: 3602, type: ss, cipher: rc4-md5, password: RenzheCloudSS, tfo: false, plugin: obfs, plugin-opts: {mode: http, host: 48d3854984.microsoft.com}}
-  - {name: 香港3 tg@freeVPNjd, server: 10.kccic2pa.xyz, port: 50010, type: vmess, uuid: c17a31ce-d574-40c4-8d4e-07d8299c9fd7, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 香港5 tg@freeVPNjd, server: n1700029696.izwhvan.cn, port: 443, type: vmess, uuid: 1f574157-76f0-488c-9fbb-5b5b375ba9a4, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: n1700029696.izwhvan.cn, network: ws, ws-opts: {path: /, headers: {Host: n1700029696.izwhvan.cn}}}
+  - {name: 香港2 tg@freeVPNjd, server: n1699974613.aaigefm.cn, port: 443, type: vmess, uuid: 98e145b7-35ff-4309-aa5e-fd6107f199eb, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: n1699974613.aaigefm.cn, network: ws, ws-opts: {path: /, headers: {Host: n1699974613.aaigefm.cn}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 新加坡 tg@freeVPNjd
-      - 日本 tg@freeVPNjd
       - 美国 tg@freeVPNjd
+      - 美国 tg@freeVPNjd 2
+      - 美国 tg@freeVPNjd 3
       - 香港 tg@freeVPNjd
       - 香港2 tg@freeVPNjd
-      - 香港3 tg@freeVPNjd
-      - 香港5 tg@freeVPNjd
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 新加坡 tg@freeVPNjd
-      - 日本 tg@freeVPNjd
       - 美国 tg@freeVPNjd
+      - 美国 tg@freeVPNjd 2
+      - 美国 tg@freeVPNjd 3
       - 香港 tg@freeVPNjd
       - 香港2 tg@freeVPNjd
-      - 香港3 tg@freeVPNjd
-      - 香港5 tg@freeVPNjd
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -65,13 +59,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 tg@freeVPNjd
-      - 日本 tg@freeVPNjd
       - 美国 tg@freeVPNjd
+      - 美国 tg@freeVPNjd 2
+      - 美国 tg@freeVPNjd 3
       - 香港 tg@freeVPNjd
       - 香港2 tg@freeVPNjd
-      - 香港3 tg@freeVPNjd
-      - 香港5 tg@freeVPNjd
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
