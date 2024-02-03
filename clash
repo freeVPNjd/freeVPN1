@@ -15,77 +15,69 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: sgp tg@freeVPNjd, server: sg1.ip8.shop, port: 23636, client-fingerprint: chrome, type: vmess, uuid: 36e4437e-37e9-4afd-94b4-f9de2d6dc38d, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: sg1.ip8.shop}}}
-  - {name: 日本 tg@freeVPNjd, server: jpdj7.ip8.shop, port: 21988, client-fingerprint: chrome, type: vmess, uuid: 36e4437e-37e9-4afd-94b4-f9de2d6dc38d, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: jpdj7.ip8.shop}}}
-  - {name: 美国 tg@freeVPNjd, server: www.visa.com, port: 443, client-fingerprint: chrome, type: vmess, uuid: 18cf272f-f577-49e0-9718-2c0211593533, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: dean-medical-periods-legacy.trycloudflare.com, network: ws, ws-opts: {path: 18cf272f-f577-49e0-9718-2c0211593533-vm, headers: {Host: dean-medical-periods-legacy.trycloudflare.com}}}
-  - {name: 韩国 tg@freeVPNjd, server: krse4.ip8.shop, port: 31188, client-fingerprint: chrome, type: vmess, uuid: 36e4437e-37e9-4afd-94b4-f9de2d6dc38d, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: krse4.ip8.shop}}}
+  - {name: 🇯🇵 日本tg@freeVPNjd, server: jp-tokyo-oracle-03b285.ip1.shop, port: 21988, client-fingerprint: chrome, type: vmess, uuid: 36e4437e-37e9-4afd-94b4-f9de2d6dc38d, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: jp-tokyo-oracle-03b285.ip1.shop}}}
+  - {name: 🇰🇷 韩国tg@freeVPNjd, server: kr-seoul-oracle-4fccf5.ip1.shop, port: 49898, client-fingerprint: chrome, type: vmess, uuid: 36e4437e-37e9-4afd-94b4-f9de2d6dc38d, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: kr-seoul-oracle-4fccf5.ip1.shop}}}
+  - {name: 🇸🇬 新加坡tg@freeVPNjd, server: sg-singapore-oracle-4f34e8.ip1.shop, port: 34798, client-fingerprint: chrome, type: vmess, uuid: 36e4437e-37e9-4afd-94b4-f9de2d6dc38d, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: sg-singapore-oracle-4f34e8.ip1.shop}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - sgp tg@freeVPNjd
-      - 日本 tg@freeVPNjd
-      - 美国 tg@freeVPNjd
-      - 韩国 tg@freeVPNjd
+      - 🇯🇵 日本tg@freeVPNjd
+      - 🇰🇷 韩国tg@freeVPNjd
+      - 🇸🇬 新加坡tg@freeVPNjd
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - sgp tg@freeVPNjd
-      - 日本 tg@freeVPNjd
-      - 美国 tg@freeVPNjd
-      - 韩国 tg@freeVPNjd
+      - 🇯🇵 日本tg@freeVPNjd
+      - 🇰🇷 韩国tg@freeVPNjd
+      - 🇸🇬 新加坡tg@freeVPNjd
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - sgp tg@freeVPNjd
-      - 日本 tg@freeVPNjd
-      - 美国 tg@freeVPNjd
-      - 韩国 tg@freeVPNjd
+      - 🇯🇵 日本tg@freeVPNjd
+      - 🇰🇷 韩国tg@freeVPNjd
+      - 🇸🇬 新加坡tg@freeVPNjd
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - sgp tg@freeVPNjd
-      - 日本 tg@freeVPNjd
-      - 美国 tg@freeVPNjd
-      - 韩国 tg@freeVPNjd
+      - 🇯🇵 日本tg@freeVPNjd
+      - 🇰🇷 韩国tg@freeVPNjd
+      - 🇸🇬 新加坡tg@freeVPNjd
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - sgp tg@freeVPNjd
-      - 日本 tg@freeVPNjd
-      - 美国 tg@freeVPNjd
-      - 韩国 tg@freeVPNjd
+      - 🇯🇵 日本tg@freeVPNjd
+      - 🇰🇷 韩国tg@freeVPNjd
+      - 🇸🇬 新加坡tg@freeVPNjd
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - sgp tg@freeVPNjd
-      - 日本 tg@freeVPNjd
-      - 美国 tg@freeVPNjd
-      - 韩国 tg@freeVPNjd
+      - 🇯🇵 日本tg@freeVPNjd
+      - 🇰🇷 韩国tg@freeVPNjd
+      - 🇸🇬 新加坡tg@freeVPNjd
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - sgp tg@freeVPNjd
-      - 日本 tg@freeVPNjd
-      - 美国 tg@freeVPNjd
-      - 韩国 tg@freeVPNjd
+      - 🇯🇵 日本tg@freeVPNjd
+      - 🇰🇷 韩国tg@freeVPNjd
+      - 🇸🇬 新加坡tg@freeVPNjd
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +100,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - sgp tg@freeVPNjd
-      - 日本 tg@freeVPNjd
-      - 美国 tg@freeVPNjd
-      - 韩国 tg@freeVPNjd
+      - 🇯🇵 日本tg@freeVPNjd
+      - 🇰🇷 韩国tg@freeVPNjd
+      - 🇸🇬 新加坡tg@freeVPNjd
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -2038,6 +2029,9 @@ rules:
   - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
+  - DOMAIN-SUFFIX,bilibili.tv,🌍 国外媒体
+  - DOMAIN-SUFFIX,bstarstatic.com,🌍 国外媒体
+  - DOMAIN,pic-bstarstatic.akamaized.net,🌍 国外媒体
   - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
   - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
@@ -2087,7 +2081,6 @@ rules:
   - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
   - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
   - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
   - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
@@ -2832,6 +2825,8 @@ rules:
   - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilibili.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bilibili.co,🎯 全球直连
+  - DOMAIN-SUFFIX,biliintl.co,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.com,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilivideo.com,🎯 全球直连
